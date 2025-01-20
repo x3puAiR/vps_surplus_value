@@ -104,3 +104,4 @@
 - [api.iloli.fun/exchange_rate](https://api.iloli.fun/exchange_rate) - 提供实时汇率数据
 - [Flatpickr](https://flatpickr.js.org/) - 轻量级的日期选择器
 - [Font Awesome](https://fontawesome.com/) - 提供优秀的图标集
+- [YxVM](https://yxvm.com/) - 服务器赞助支持
