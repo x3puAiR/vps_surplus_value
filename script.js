@@ -189,9 +189,12 @@ function calculateAndSend() {
 }
 
 function updateResults(result, data) {
+    const cycle=document.getElementById('cycle');
+    const cycleText = cycle.options[cycle.selectedIndex].text.slice(0, -1);
+    console.log(cycleText)
     document.getElementById('resultDate').innerText = data.transactionDate;
     document.getElementById('resultForeignRate').innerText = data.customRate.toFixed(3);
-    document.getElementById('resultPrice').innerText = `${data.price} 人民币/年`;
+    document.getElementById('resultPrice').innerText = `${data.price} 人民币/${cycleText}`;
     document.getElementById('resultDays').innerText = data.time;
     document.getElementById('resultExpiry').innerText = data.expiryDate;
     document.getElementById('resultValue').innerText = `${result.remainingValue} 元`;
